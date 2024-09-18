@@ -7,10 +7,10 @@ int main() {
     cout <<"INGRESE LA EDAD: " << endl;
     cin >> edad;
     if (edad > 18) {
-        cout <<"Es mayor de 18";
+        cout <<"ES MAYOR DE 18";
     }
     else {
-         cout <<"Es menor de 18";
+         cout <<"ES MENOR DE 18";
    }
    return 0;
 }
