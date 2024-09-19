@@ -1,0 +1,20 @@
+/* Declara tres variables: un entero, un número con decimales y un carácter.
+Asigna valores a estas variables e imprímelas en la consola.
+*/
+
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int numero;     //%d (tipo entero)
+    float estatura; //%f (tipo flotante)
+    char letra;     //%c (tipo caracter)
+    printf("Ingrese letra: \n");
+    scanf("%c", &letra);
+    printf("Imprime: %c", letra); //%2.f (imprime 2 dicmales)
+
+    return 0;
+}
