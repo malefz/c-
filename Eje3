@@ -1,0 +1,18 @@
+#include <iostream> //biblioteca estandar E/S
+#include <math.h> //esta biblioteca permite usar la funcion sqrt()
+
+using namespace std;
+
+//punto de entrada del programa
+int main() 
+{
+    //instrucciones del programa
+    int num, aux;
+    cout << "Ingrese un numero para sacar la raiz cuadrada\n";
+    cin >> num;          //num. a calcular la raiz cuadrada
+    aux = sqrt(num);        // sqrt() toma un num. de tipo doble y calcula la raiz
+    cout << "La raiz cuadrada es: " << aux;
+
+    return 0;     //indica que el programa terminó
+}
+
