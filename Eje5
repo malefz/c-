@@ -1,0 +1,18 @@
+/* Investiga cómo funciona la función scanf() en C y usa este conocimiento para modificar el programa del ejercicio 1.
+Ahora el programa debe pedirle al usuario su nombre e imprimir "¡Hola, [nombre del usuario]!".
+*/
+
+#include <iostream> //preguntar si es necesario
+#include <stdio.h>  //esta libreria permite mostrar datos por pantalla
+
+using namespace std;
+
+int main()
+{
+    char nombre[50];   //[] cant. de caracteres a utilizar
+    printf("INGRESE EL NOMBRE: \n");    //PARA IMPRIMIR TEXTO
+    scanf("%s", &nombre);    //PARA LEER DATOS - "%s" indica el tipo de dato (STRING)
+    printf("SALUDAMOS:¡Hola %s!", nombre);
+
+    return 0;
+}
