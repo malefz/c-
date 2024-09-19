@@ -5,11 +5,11 @@ using namespace std;
 
 int main()
 {
-    int num, aux;
+    int num;
     cout << "Ingrese un numero para sacar la raiz cuadrada\n";
     cin >> num;
-    aux = sqrt(num);
-    cout << "La raiz cuadrada es: " << aux;
+    num = sqrt(num);
+    cout << "La raiz cuadrada es: " << num;
 
     return 0;
 }
