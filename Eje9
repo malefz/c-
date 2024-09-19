@@ -1,0 +1,20 @@
+/*Escribe un programa en el que el usuario ingrese dos números enteros.
+Usa variables para almacenar estos números y luego imprime la suma, resta, multiplicación y división de esos números
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num1, num2, suma;
+    cout << "INGRESE EL 1ER NUMERO: " << endl;
+    cin >> num1;
+    cout << "INGRESE EL 2DO NUMERO: " << endl;
+    cin >> num2;
+    suma = num1 + num2;
+    cout << "LA SUMA: " << suma << endl;
+
+    return 0;
+}
