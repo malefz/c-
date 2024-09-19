@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int num, aux;
+    cout << "Ingrese un numero para sacar la raiz cuadrada\n";
+    cin >> num;
+    aux = sqrt(num);
+    cout << "La raiz cuadrada es: " << aux;
+
+    return 0;
+}
