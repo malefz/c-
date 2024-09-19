@@ -8,13 +8,15 @@ using namespace std;
 
 int main()
 {
-    int num1, num2, suma;
-    cout << "INGRESE EL 1ER NUMERO: " << endl;
+    int num1, num2;
+    cout << "Ingrese el 1er numero: " << endl;
     cin >> num1;
-    cout << "INGRESE EL 2DO NUMERO: " << endl;
+    cout << "Ingrese el 2do numero: " << endl;
     cin >> num2;
-    suma = num1 + num2;
-    cout << "LA SUMA: " << suma << endl;
+    cout << "La suma es: " << num1 + num2 << endl;
+    cout << "La resta es: " << num1 - num2 << endl;
+    cout << "La multiplicacion: " << num1 * num2 << endl;
+    cout << "Division " << num1 / num2 << endl;
 
     return 0;
 }
