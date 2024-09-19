@@ -1,0 +1,19 @@
+/* Escribe un programa que calcule el área de un círculo. Usa una variable de tipo float para almacenar el radio y otra para el área. 
+El valor de PI puede ser 3.1416.
+*/
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    const float pi = 3.1416; 
+    float radio, area;
+    cout << "Ingrese el radio del circulo: ";
+    cin >> radio; // variable q se va a asignar el radio
+    area = pi * (radio * radio);
+    cout << "El area del circulo es: " << area;       // se muestra en pantalla con la funcion cout
+    return 0;
+}
