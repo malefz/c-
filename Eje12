@@ -1,0 +1,43 @@
+/* Modifica el programa del ejercicio anterior para incluir otras dos funciones:
+resta() y multiplicacion(), que calculen la resta y la multiplicación de dos números.
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int suma(int a, int b);
+int resta(int a, int b);
+int multiplicacion(int a, int b);
+
+int main()
+{
+    int num1, num2, result, res1, res2;
+    cout << "Ingrese el primer numero: ";
+    cin >> num1;
+    cout << "Ingrese el segundo numero: ";
+    cin >> num2;
+    result = suma(num1, num2);
+    res1 = resta(num1, num2);
+    res2 = multiplicacion(num1, num2);
+
+    cout << "La suma de " << num1 << " y " << num2 << " es: " << result << endl;
+
+    cout << "La resta de " << num1 << " y " << num2 << " es: " << res1 << endl;
+
+    cout << "La multiplicacion entre " << num1 << " y " << num2 << " es: " << res2 << endl;
+
+    return 0;
+}
+int suma(int a, int b)
+{
+    return a + b;
+}
+int resta(int a, int b)
+{
+    return a - b;
+}
+int multiplicacion(int a, int b)
+{
+    return a * b;
+}
