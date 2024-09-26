@@ -1,0 +1,75 @@
+/*
+Crea un programa que lea una calificación numérica del usuario y asigne una letra de calificación según el siguiente criterio:
+ 90-100: A
+ 80-89: B
+ 70-79: C
+ 60-69: D
+ Menor a 60: F
+Utiliza if, else if y else para implementar la lógica. ¿Hay una manera de hacerlo más efectivo?
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float nota;
+    cout << "Ingrese la calificacion del alumno: " << endl;
+    cin >> nota;
+
+    // la nota es convertida a un rango
+    if (nota < 0 || nota > 100)
+    {
+        cout << "La nota debe estar entre 0 y 100." << endl;
+    }
+    else
+    {
+        // convertir la nota a un rango para el swith
+        int rango;
+        if (nota >= 90)
+        {
+            rango = 1;
+        }
+        else if (nota >= 80)
+        {
+            rango = 2;
+        }
+        else if (nota >= 70)
+        {
+            rango = 3;
+        }
+        else if (nota >= 60)
+        {
+            rango = 4;
+        }
+        else
+        {
+            rango = 5;
+        }
+
+        switch (rango)
+        {
+        case 1:
+            cout << "90 - 100: A" << endl;
+            break;
+        case 2:
+            cout << "80 - 89: B" << endl;
+            break;
+        case 3:
+            cout << "70 - 79: C" << endl;
+            break;
+        case 4:
+            cout << "60 - 69: D" << endl;
+            break;
+        case 5:
+            cout << "Menor a 60: F" << endl;
+            break;
+        default:
+            cout << "Error: la calificacion no es valida." << endl;
+            break;
+        }
+    }
+
+    return 0;
+}
