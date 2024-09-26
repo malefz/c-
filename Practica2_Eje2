@@ -1,0 +1,40 @@
+/*
+Crea un programa que lea una calificación numérica del usuario y asigne una letra de calificación según el siguiente criterio:
+ 90-100: A
+ 80-89: B
+ 70-79: C
+ 60-69: D
+ Menor a 60: F
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int nota;
+    cout << "Ingrese calificacion del alumno: " << endl;
+    cin >> nota;
+    if (nota >= 90 && nota <= 100)
+    {
+        cout << "90 - 100: A " << endl;
+    }
+    else if (nota >= 80 && nota <= 89)
+    {
+        cout << "80 - 89: B " << endl;
+    }
+    else if (nota >= 70 && nota <= 79)
+    {
+        cout << "70 - 79: C " << endl;
+    }
+    else if (nota >= 60 && nota <= 69)
+    {
+        cout << "60 - 69: D " << endl;
+    }
+    else if (nota <= 60)
+    {
+        cout << "Menor a 60: F " << endl;
+    }
+    return 0;
+}
