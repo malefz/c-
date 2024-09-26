@@ -1,0 +1,28 @@
+/*
+Escribe un programa que defina una función convertirCelsiusAFahrenheit(),
+la cual reciba una temperatura en grados Celsius y devuelva la temperatura equivalente en Fahrenheit.
+Usa la fórmula: F=(C*9/5) + 32 . Desde main(), solicita una temperatura en Celsius al usuario y muestra el resultado en Fahrenheit.
+*/
+
+#include <iostream>
+
+using namespace std;
+
+// funcion para convertir celsius a Fahrenheit
+double convertirCelsiusAFahrenheit(double celsius);
+
+int main()
+{
+    double celsius;
+    cout << "Introduce la temperatura en grados Celsius: " << endl;
+    cin >> celsius;
+    double fahrenheit = convertirCelsiusAFahrenheit(celsius);
+    cout << celsius << " grados Celsius equivalen a " << fahrenheit << " grados fahrenheit. " << endl;
+
+    return 0;
+}
+
+double convertirCelsiusAFahrenheit(double celsius)
+{
+    return (celsius * 9.0 / 5.0) + 32.0;
+}
