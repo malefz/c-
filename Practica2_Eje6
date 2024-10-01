@@ -1,0 +1,31 @@
+/*
+Ejercicio 6: Tabla de Multiplicar con do-while
+Desarrolla un programa que imprima la tabla de multiplicar
+ de un número ingresado por el usuario utilizando un bucle do-while.
+El programa debe preguntar al usuario si desea
+ver otra tabla después de cada ejecución.
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num;
+    char respuesta; 
+
+    do
+    {
+        cout << "Ingrese un numero para ver su tabla de multiplicar: ";
+        cin >> num; // 4
+        cout << "Tabla de multiplicar del numero " << num << "\n";
+        for (int i = 1; i <= 10; i++)
+        {
+            cout << num << " x " << i << " = " << num * i << "\n";
+        }
+        cout << "¿Desea ver otra tabla de multiplicar? (s/n): \n";
+        cin >> respuesta;
+    } while (respuesta == 's' || respuesta == 'n');
+    return 0;
+}
