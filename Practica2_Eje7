@@ -1,0 +1,37 @@
+/*
+Ejercicio 7: Uso de break en Bucles
+Escribe un programa que busque un número específico dentro de un arreglo de enteros.
+Si encuentra el número, debe imprimir su posición y salir del bucle utilizando break.
+Si el número no se encuentra, debe informar al usuario.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int numeros[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};   // define el arreglo
+    int tamaño = sizeof(numeros) / sizeof(numeros[0]); //calcula el numero de elementos en el arreglo
+    int numeroBuscado;
+    bool encontrado = false;
+
+    cout << "Ingrese el numero que desea buscar: ";
+    cin >> numeroBuscado;
+
+    for (int i = 0; i < tamaño; i++) // busca el numero en el arreglo
+    {
+        if (numeros[i] == numeroBuscado)
+        {
+            cout << "Numero encontrado en la posicion: " << i << endl;
+            encontrado = true;
+            break; // Sale del bucle
+        }
+    }
+
+    if (!encontrado) // si el num. no se escontro, informa al usuario
+    {
+        cout << "El numero no se encuentra en el arreglo." << endl;
+    }
+
+    return 0;
+}
