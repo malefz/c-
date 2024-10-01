@@ -1,0 +1,36 @@
+/*
+Ejercicio 5: Suma de Números con Bucle while
+Crea un programa que solicite al usuario ingresar números enteros positivos.
+El programa debe continuar pidiendo números hasta que el usuario ingrese 0. Al finalizar,
+muestra la suma de todos los números ingresados utilizando un bucle while.
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num;
+    int suma = 0;
+    cout << "SUMA DE NUMEROS " << endl;
+    cout << "Ingrese numeros enteros positivos (ingrese 0 para finalizar): " << endl;
+
+    /*
+    El ciclo va a estar ejecutandose MIENTRAS que el numero q recibe de usuario sea mayor o igual a 1.
+    Cuando el usuario ingresa 0 o negativo la suma se muestra en pantalla.
+    */
+
+
+    do
+    {
+        cout << "Ingrese el numero: " << endl;
+        cin >> num;
+        if (num > 0)
+        {
+            suma += num; // suma=suma + num//
+        }
+    } while (num >= 1);
+    cout << "La suma de todos los numeros es: " << suma << endl;
+    return 0;
+}
