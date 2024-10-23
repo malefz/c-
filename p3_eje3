@@ -1,0 +1,30 @@
+/*
+3. Imprimir Números Pares e Impares
+Escribe un programa que use un bucle for para imprimir los números pares del 1 al 20 y luego los números impares del 1 al 20.
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "NUMEROS PARES DEL 1 al 20: \n";
+    for (int i = 1; i <= 20; i++)
+    {
+        if (i % 2 == 0)
+        {
+            cout << i << endl;
+        }
+    }
+    cout << " \n";
+    cout << "NUMEROS IMPARES DEL 1 al 20: \n";
+    for (int i = 1; i <= 20; i++)
+    {
+        if (i % 2 == 1)
+        {
+            cout << i << endl;
+        }
+    }
+    return 0;
+}
