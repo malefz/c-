@@ -1,0 +1,20 @@
+/*
+1. Imprimir Números del 1 al N
+Escribe un programa que use un bucle for para imprimir todos los números del 1 al N donde N es ingresado por el usuario.
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N;
+    cout << "Ingrese el N numero: ";
+    cin >> N;                    // se usa cin para tomar la entrada del usuario y almacenarla en la variable
+    for (int i = 1; i <= N; i++) // comienza y 1 y repite hasta q i sea igual a N
+    {
+        cout << i << endl; // imprimiendo cada valor de i y un salto de linea
+    } 
+    return 0;
+}

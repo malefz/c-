@@ -1,0 +1,21 @@
+/*
+7. Imprimir una Tabla de Multiplicar
+Escribe un programa que solicite un número N e imprima la tabla de multiplicar del 1 al 10 usando un bucle for.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+
+    cout << "TABLA  DE  MULTIPLICAR " << endl;
+    cout << "Digite el numero: ";
+    cin >> N;
+    for (int i = 1; i <= 10; i++)
+    {
+        cout << N << " x " << i << " = " << N * i << endl;
+    }
+    return 0;
+}

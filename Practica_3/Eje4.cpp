@@ -1,0 +1,21 @@
+/*
+4. Factorial de un Número
+Implementa un programa que calcule el factorial de un número N usando un bucle for.
+El factorial de N (denotado como N!) es el producto de todos los números enteros positivos menores o iguales a N.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N, factorial = 1;
+    cout << "Digite un numero : ";
+    cin >> N;
+    for (int i = 1; i <= N; i++)
+    {
+        factorial = factorial * i;
+    }
+    cout << "El factorial de " << N << "! es: " << factorial << endl;
+    return 0;
+}

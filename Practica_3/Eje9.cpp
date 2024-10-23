@@ -1,0 +1,23 @@
+/*
+9. Matriz de Suma de Índices
+Usa bucles anidados para crear una matriz 5x5 donde cada elemento sea la suma de sus índices de fila y columna.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int matriz[5][5];
+    cout << "Digite la matriz: ";
+    cin >> matriz;
+    // crear la matriz
+    for (int fila = 1; fila <= 5; fila++)
+    {
+        for (int columna = 1; columna <= 5; columna++)
+        {
+            cout << "matriz";
+        }
+    }
+    return 0;
+}
