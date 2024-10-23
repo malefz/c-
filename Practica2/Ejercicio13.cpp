@@ -1,0 +1,29 @@
+/*
+Crea un programa con una variable global llamada contador.
+Luego, escribe una función que incremente el valor de contador en 1 cada vez que se llame.
+ Llama a la función varias veces desde main() y muestra el valor de contador después de cada llamad
+*/
+
+#include <iostream>
+
+using namespace std;
+// Variable global
+int contador = 0;
+
+// Función que incrementa el contador
+void incrementarContador()
+{
+    contador++;
+}
+
+int main()
+{
+    // se llama la funcion varias veces
+    for (int i = 0; i < 5; i++)
+    {
+        incrementarContador();
+        cout << "Valor a imprimir de " << (i + 1) << ": " << contador << endl;
+    }
+
+    return 0;
+}

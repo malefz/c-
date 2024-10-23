@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+// Escribe un programa que use variables de tipo char para almacenar el género de una persona
+// ('M' para masculino, 'F' para femenino). El programa debe imprimir un mensaje personalizado basado en el valor ingresado.
+int main()
+{
+    char genero;
+    cout << "Ingrese el genero (M para masculino, F para femenino): " << endl;
+    cin >> genero;
+    if (genero == 'M' || genero == 'm')
+    {
+        cout << "Hola, Caballero." << endl;
+    }
+    else if (genero == 'F' || genero == 'f')
+    {
+        cout << "Hola, Dama." << endl;
+    }
+    else
+    {
+        cout << "El genero ingresado no es valido" << endl;
+    }
+    return 0;
+}

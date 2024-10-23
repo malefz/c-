@@ -1,0 +1,39 @@
+/*
+Escribe un programa que defina una función llamada esPar() que reciba un número entero
+como parámetro y devuelva 1 si es par o 0 si es impar. Luego, desde main(),
+ pide un número al usuario y usa esta función para decir si el número es par o impar
+*/
+
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int esPar(int num); // no es necesario poner llaves ya que es un prototipo
+int main()
+{
+    int numero, x;
+    printf("Intruducir un numero: \n ");
+    scanf("%d", &numero); // lee un numero entero y lo almacena en 'numero'
+    x = esPar(numero);
+    if (x == 1)
+    {
+        cout << "El numero es par. " << endl;
+    }
+    else
+    {
+        cout << "El numero es impar. " << endl;
+    }
+    return 0;
+}
+int esPar(int num)
+{
+    if (num % 2 == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}

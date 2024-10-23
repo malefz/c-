@@ -1,0 +1,27 @@
+/*Escribe un programa que defina y use una funcion llamada suma().
+La funcion debe tomar dos numeros enteros como parametros
+y devolver la suma de estos numeros
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int suma(int a, int b); // LA FUNCION SUMA RECIBE DOS PARAMETROS DE ENTRADA
+
+int main()
+{
+    int num1, num2, result;
+    cout << "Ingrese el primer numero: " << endl;
+    cin >> num1;
+    cout << "Ingrese el segundo numero: " << endl;
+    cin >> num2;
+    result = suma(num1, num2);
+    cout << "La suma de " << num1 << " y " << num2 << " es: " << result << endl;
+    return 0;
+}
+
+int suma(int a, int b) // LA FUNCION SUMA RECIBE DOS PARAMETROS DE ENTRADA
+{
+    return a + b; // RETORNA EL RESULTADO
+}
