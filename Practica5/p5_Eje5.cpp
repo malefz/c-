@@ -40,12 +40,3 @@ int main()
 
 */
 
-/*
-El código que has proporcionado es un ejemplo de una función recursiva que cuenta el número de llamadas que se han realizado. Aquí tienes un resumen de cómo funciona y su salida:
-
-Variable Estática: llamadas es una variable estática, lo que significa que su valor se conserva entre diferentes llamadas a la función contarLlamadas.
-
-Incremento y Salida: Cada vez que se llama a la función, se incrementa la variable llamadas y se imprime el número de la llamada actual.
-
-Condición de Recursión: La función se llama a sí misma mientras llamadas sea menor que 5. Esto crea una serie de 5 llamadas antes de detenerse.
-*/
