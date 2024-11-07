@@ -12,7 +12,7 @@ global para contar los intentos y asegurarte de que el contador se mantenga hast
 using namespace std;
 
 // variable global
-int intentos = 0;
+int intentos= 0;
 
 int adivinarNumero()
 {
@@ -71,10 +71,3 @@ Puntos a considerar:
 
 */
 
-/*
-Explicación del código:
-Uso de printf y scanf: Se utilizan para la entrada y salida en lugar de cout y cin. Esto hace que el código se asemeje más a C.
-Número Fijo: El número secreto es 5. Esto permite que el juego sea predecible en cada ejecución.
-Contador de Intentos: La variable global intentos se incrementa en cada intento del usuario.
-Bucle de Adivinanza: El bucle do-while permite que el usuario siga intentando hasta que adivine correctamente.
-*/
