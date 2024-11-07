@@ -48,7 +48,7 @@ int main()
 }
 
 /*
-Puntos a considerar:
+Puntos a considerar
 -    ¿Qué variables tienen que ser locales? ¿Cuál tiene que ser estática?
     Local: Las variables contadorA y contadorB son locales a sus respectivas funciones.
     Estática: Las variables contadorA y contadorB deben ser declaradas como static para
@@ -60,7 +60,3 @@ Puntos a considerar:
     Por lo que su alcance está limitado a esa función, y no se puede acceder desde fuera.
 */
 
-/*
-El código demuestra cómo las variables estáticas conservan sus valores a lo largo de múltiples llamadas a una función.
-Como resultado, funcionA cada funcionB informe se llama un total de 3 veces al final de la main()función.
-*/
