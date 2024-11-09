@@ -24,8 +24,8 @@ int main()
     */
     int posicion = texto_largo.find(palabra);
 
-    // preguntar
-    if (posicion)
+     // Distinto de -1 porq si inicializo en 0 estaria comparando con la primera posicion de la cadena
+    if (posicion != -1) 
     {
         cout << "La palabra se encuentra en la posicion: " << posicion << endl;
     }
